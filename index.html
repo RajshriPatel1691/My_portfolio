@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <!-- <link rel="stylesheet" href="style.css"/>  -->
+   <!-- <link rel="stylesheet" href="style_updated.css"> -->
+  <link rel="stylesheet" href="style_up.css"> 
+  <script src="script.js"></script>
+   
+  <style>
+    /* #col{
+      background-color:linear-gradient(to right, #8b97a4 0%, #81a5bd 100%); */
+
+    #col {
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+    
+
+  </style>
+</head>
+<body id="col">
+  <header>
+    <nav>
+      <div class="nav-top">
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+        <div class="logo">RajshriCodes</div>
+        <button id="dark-toggle" onclick="toggleDarkMode()">🌙</button>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#awards">Certificates</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="section">
+    <div class="hero-content">
+      <img src="image/my1.jpg" alt="Rajshri Patel" class="hero-image" />
+       <!-- <img src="image/my1.jpg" alt="Rajshri Patel" class="tilted-image" /> -->
+
+      <h1><span id="typing-text">Hello, I'm Rajshri Patel</span></h1>
+      <p>Python Full-Stack Web Developer</p>
+      <a href="#contact" class="custom-btn btn-9">Let's Work Together</a>
+    </div>
+  </section>
+
+
+
+  
+
+
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <p>👩‍💻 I’m Rajshri Sainath Patel, a passionate Full Stack Developer</p>
+
+<p>📍 From Hatmohida, District Nandurbar, Maharashtra</p>
+
+<p>🎓 Final Year B.Tech in Computer Engineering | DBATU University, Lonere (2025).</p>
+
+<p>🧠 Worked on a project: “Precision Agriculture: ML and DL Techniques for Pest Detection”.</p>
+
+<p>💡 Self-motivated and smart-working with a keen interest in solving real-world problems.</p>
+
+<p>⚙️ Interested in both front-end and back-end development.</p>
+
+<p>📚 Hobbies: Reading books, learning new skills, and listening to music.</p>
+
+
+  </section>
+
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+     <div>React</div>
+      <div>Python</div>
+      <div>Django</div>
+      
+      <div>Flask</div>
+     
+      <div>Java</div>
+      <div>SQL</div>
+      <div> GitHub</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+
+      <!-- <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio with animation and contact form built using HTML, CSS, and JavaScript.</p>
+        <button onclick="window.open('https://github.com/RajshriPatel1691/Portfolio', '_blank')">Open</button>
+      </div> -->
+
+      <div class="project-card food-bg">
+        <h3>🍔 Online Food Delivery</h3>
+        <p>A web-based food ordering system that allows users to browse menus, place customized orders, and make secure payments. Built using HTML, CSS, and JavaScript, it offers core features like customer login, order tracking, and ratings. Designed to simplify the ordering process and improve communication between users and restaurants.</p>
+        <button onclick="window.open('https://github.com/RajshriPatel1691/-Khanakajana', '_blank')">Open</button>
+      </div>
+
+      <div class="project-card agri-bg" id="agri">
+        <h3>🌱 PrecisionAgriVision</h3>
+        <p>A smart pest detection and classification system using machine learning and deep learning techniques to support precision agriculture. It helps farmers identify pests early through image analysis, improving crop health and reducing pesticide use.
+
+</p>
+        <button onclick="window.open('https://github.com/RajshriPatel1691/PrecisionAgriVision', '_blank')">Open</button>
+      </div>
+
+      <div class="project-card car-bg">
+        <h3>🚗 Automated Car Parking System</h3>
+        <p>A smart parking solution built using Python (PyQt) and MySQL. This system allows users to book parking slots online, generate automated bills, track vehicle entry/exit, and provides admin access for real-time data analysis. Designed to reduce urban congestion and optimize parking space usage.</p>
+        <button onclick="window.open('https://github.com/RajshriPatel1691/Automated-Car-Parking-System', '_blank')">Open</button>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="awards" class="Awa">
+  <h2>Awards & Certificates</h2>
+
+  <!-- <div class="certificates"> -->
+    
+    <div class="certificates">
+    <div class="certificate-item">
+      <img src="image/Html.png" alt="HTML Certificate" onclick="openModal(this)">
+      <h3>HTML Certificate</h3>
+    </div>
+
+    <!-- <div class="certificates"> -->
+    <div class="certificate-item">
+      <img src="image/Css.jpg" alt="CSS Certificate" onclick="openModal(this)">
+      <h3>CSS Certificate</h3>
+    </div>
+
+    <div class="certificate-item">
+      <img src="image/Python.png" alt="Python Certificate" onclick="openModal(this)">
+      <h3>Python Certificate</h3>
+    </div>
+
+    <div class="certificate-item">
+      <img src="image/Appti.png" alt="Appti Certificate" onclick="openModal(this)">
+      <h3>Appti Certificate</h3>
+    </div>
+
+    <div class="certificate-item">
+      <img src="image/python Google.png" alt="Python Google Certificate" onclick="openModal(this)">
+      <h3>Python Google Certificate</h3>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div id="modal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <div id="caption"></div>
+  </div>
+</section>
+
+</section>
+
+  <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <section id="contact" class="section">
+  
+  <div class="contact-links">
+    <a href="mailto:rajshripatel2001@gmail.com" class="contact-link">📧 rajshripatel2001@gmail.com</a>
+    <a href="https://www.linkedin.com/in/rajshri-patel-8170662b4" class="contact-link" target="_blank" rel="noopener noreferrer">
+      💼 linkedin.com/in/rajshri-patel-8170662b4
+    </a>
+    <a href="https://github.com/RajshriPatel1691" class="contact-link" target="_blank" rel="noopener noreferrer">
+      💻 github.com/RajshriPatel1691
+    </a>
+  </div>
+
+  <section id="resume" class="section">
+  <h2>My Resume</h2>
+  <p>You can download my resume by clicking the button below.</p>
+  <a href="file/Rajshri_resume (2).pdf" download class="btn-resume">📄 Download Resume</a>
+</section>
+
+</section>
+
+    <!-- <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section> -->
+
+  <footer>
+    <p>&copy; 2025 Rajshri Patel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
